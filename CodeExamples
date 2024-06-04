@@ -37,6 +37,12 @@ int main(){
     cout<<endl;
     cout<<sizeof(b[4]);
 
+    //Basic Input and Output
+    float m, cm;
+    cout<<"Enter the value in meters: ";
+    cin>>m;
+    cout<<"The vale in centimeters is: "<<m*100;
+
 
     return 0;
 }
