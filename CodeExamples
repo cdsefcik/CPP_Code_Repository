@@ -35,7 +35,7 @@ int main(){
     int b[4] = {1,2,3,4};
     cout<<b[0]<<b[1]<<b[2]<<b[3]<<endl;
     cout<<endl;
-    cout<<sizeof(b[4]);
+    cout<<sizeof(b[4])<<endl;
 
     //Basic Input and Output
     float m, cm;
