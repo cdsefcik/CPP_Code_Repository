@@ -43,6 +43,11 @@ int main(){
     cin>>m;
     cout<<"The vale in centimeters is: "<<m*100;
 
+    char name[100];
+    cout <<"Enter your name: ";
+    cin>>name;
+    cout<<"Your name is "<<name<<endl;
+
 
     return 0;
 }
