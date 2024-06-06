@@ -43,6 +43,7 @@ int main(){
     cin>>m;
     cout<<"The vale in centimeters is: "<<m*100;
 
+    //The use of character input stream into an array
     char name[100];
     cout <<"Enter your name: ";
     cin>>name;
