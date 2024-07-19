@@ -49,6 +49,8 @@ int main(){
     cin>>name;
     cout<<"Your name is "<<name<<endl;
 
+    //Casting numbers
+    std::cout<<static_cast<int>(5.5); // explicitly convert double value 5.5 to an int
 
     return 0;
 }
