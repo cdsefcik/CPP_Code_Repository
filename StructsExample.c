@@ -4,12 +4,17 @@
 #include <stdbool.h>
 #include <time.h>
 #include <math.h>
+#include <string.h>
 
 /*
 *This is an introduction to structs.
 *Defines the different ways a struct can be constructed.
 *Note: This might not compile due to non constants in the arrays on Visual Studio. Compiles fine however using gcc-13.2.0.
 *This also has pointers to structures. Uses the -> operator.
+*Also covers structures as a return value.
+*Covers pointers to structs along with allocating memory using malloc and sizeof.
+*Has assigning values through pointers for a struct.
+*Define and assignment of an array with literal values.
 */
 
 #define MAX_DIMENSIONS 3
@@ -55,6 +60,47 @@ double calc_distance(int dimensions, double a[dimensions], double b[dimensions])
         square_distance += pow(a[i] - b[i], 2);
     }
     return sqrt(square_distance);
+}
+
+//Function to create bill
+struct Guy create_bill(){
+struct Guy bill = {
+    .name = "Bill Gates",
+    .pos = {1,2,3},
+    .dimensions = 3,
+    .active = true,
+};
+return bill;
+};
+
+struct Guy create_elon(){
+struct Guy Elon = {
+    .name = "Elon Musk",
+    .pos = {3,2,1},
+    .dimensions = 3,
+    .active = true,
+};
+return Elon;
+};
+
+//Build a pointer to a struct
+struct Guy *alloc_elon(){
+
+struct Guy *elon = malloc(sizeof(struct Guy));
+
+if (!elon){
+    return NULL;
+}
+
+//Settings
+elon->name = "Elon Musk";
+elon->active = true;
+elon->dimensions = 3;
+double pos[] = {1,2,3};
+memcpy(elon->pos, pos, sizeof(pos));
+
+return elon;
+
 }
 
 int main(){
@@ -129,6 +175,10 @@ if(elon.dimensions != bill.dimensions){
 
     printf("The distance between %s and %s is: %.1f\n",
     elon.name, bill.name, calc_distance(elon.dimensions, elon.pos, bill.pos));
+
+//Structure as a return value:
+
+struct Guy bill2 = create_bill();
 
     return EXIT_SUCCESS;
 };
