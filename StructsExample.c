@@ -8,7 +8,8 @@
 /*
 *This is an introduction to structs.
 *Defines the different ways a struct can be constructed.
-*Note: This might not compile due to non constants in the arrays on Visual Studio. Compiles fine however using gcc-13.2.0
+*Note: This might not compile due to non constants in the arrays on Visual Studio. Compiles fine however using gcc-13.2.0.
+*This also has pointers to structures. Uses the -> operator.
 */
 
 #define MAX_DIMENSIONS 3
@@ -89,7 +90,7 @@ int main(){
     
 
     struct Guy elon, bill;
-    Motorcycle moto;
+    //Motorcycle moto;
 
     //Nested structure
     moto.model = "honda";
@@ -110,6 +111,11 @@ int main(){
     bill.pos[1] = 2;
     bill.pos[2] = 1;
 
+    //Pointer to a structure
+    struct Guy *pointerToGuy = &bill;
+
+    printf("Guy's name: %s\n", (*pointerToGuy).name);
+    printf("Guy's name: %s\n", pointerToGuy->name);
 
 if(!elon.active || !bill.active){
     printf("%s isn't active now!\n", !elon.active ? elon.name : bill.name);
