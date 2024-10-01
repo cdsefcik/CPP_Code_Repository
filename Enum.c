@@ -4,9 +4,9 @@
 #include <stdbool.h>
 
 /*
-*These were coding exercises done on The Complete C Programming Bootcamp.
-*Shows the use of data structure Enum.
-*Different data types, Constant, Hex Format, I/O, unsigned variables, ternary operator, switch statement.
+*These were coding exercises done on "The Complete C Programming Bootcamp".
+*Shows the use of data structure enum.
+*Different data types, constant, hex format, I/O, unsigned variables, ternary operator, switch statement.
 *Funcitons include selecting the max and getting the prime numbers.
 */
 
@@ -242,11 +242,6 @@ const unsigned short int hexaSecret = 51966;
     }
     printf("X\n");
    }
-
-    
-
-   
-
     int a3,b3,c3;
 
     printf("Enter the orbit in days for the three planets: ");
