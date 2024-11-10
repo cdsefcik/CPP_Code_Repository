@@ -5,19 +5,19 @@ using namespace std;
 
 /*
 *CPP Strings
-* 
+*
 */
 
 
 int main() {
-	
+
 	//String concatenation.
 	string firstName = "Dino";
 	string lastName = "Brown";
 	string fullName = firstName + lastName;
 	//String concatenation also.
 	string fullName2 = firstName.append(lastName);
-	
+
 	//String length, can use both, length or size.
 	string str1 = "The is the string";
 
@@ -29,7 +29,18 @@ int main() {
 	cout << "Enter the string: " << endl;
 	getline(cin, user);
 	cout << "The user input string is: " << user << endl;
-	
+
+	//Take input from the user, but also eliminate white space with the WS input manipulator.
+	//Also, from the lesson, should static cast the length variable to avoid static cast errors.
+	string format;
+	cout << "Enter a formatted string: " << endl;
+	getline(std::cin >> std::ws, format);
+	cout << "The string is: " << format << endl;
+
+	int lengthformat{ static_cast<int>(format.length()) };
+
+	cout << "The length of the formatted string is: " << lengthformat << endl;
+
 	//Compare two strings
 	string var1 = "";
 	string var2 = "";
@@ -75,6 +86,6 @@ int main() {
 	}
 
 	cout << var2;
-	
+
 	return EXIT_SUCCESS;
 }
