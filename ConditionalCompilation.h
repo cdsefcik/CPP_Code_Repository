@@ -3,7 +3,7 @@
 //EXE different header files for linux or windows:
 
 #ifdef WINDOWS
-    #include "my_windows_header.h
+    #include "my_windows_header.h"
 #else
     #include "my_linux_header.h"
 #endif
