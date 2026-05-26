@@ -1,0 +1,130 @@
+﻿  database.cpp
+C:\Users\CompS\source\repos\DataBase\database.cpp(35,6): error C2039: 'stack': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      see declaration of 'std'
+  
+C:\Users\CompS\source\repos\DataBase\database.cpp(35,11): error C2143: syntax error: missing ';' before '<'
+C:\Users\CompS\source\repos\DataBase\database.cpp(35,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\CompS\source\repos\DataBase\database.cpp(35,11): error C2059: syntax error: '<'
+C:\Users\CompS\source\repos\DataBase\database.cpp(284,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\CompS\source\repos\DataBase\database.cpp(285,23): error C2131: expression did not evaluate to a constant
+      C:\Users\CompS\source\repos\DataBase\database.cpp(285,21):
+      failure was caused by a read of a variable outside its lifetime
+      C:\Users\CompS\source\repos\DataBase\database.cpp(285,21):
+      see usage of 'n'
+  
+C:\Users\CompS\source\repos\DataBase\database.cpp(286,5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\CompS\source\repos\DataBase\database.cpp(289,13): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\CompS\source\repos\DataBase\database.cpp(300,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\CompS\source\repos\DataBase\database.cpp(336,45): error C3861: 'S_ISDIR': identifier not found
+C:\Users\CompS\source\repos\DataBase\database.cpp(342,13): error C3861: 'mkdir': identifier not found
+C:\Users\CompS\source\repos\DataBase\database.cpp(383,17): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\CompS\source\repos\DataBase\database.cpp(482,5): error C2065: 'DIR': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(482,10): error C2065: 'dr': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(484,5): error C2065: 'dr': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(484,10): error C3861: 'opendir': identifier not found
+C:\Users\CompS\source\repos\DataBase\database.cpp(485,9): error C2065: 'dr': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(487,30): error C2065: 'dr': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(487,22): error C3861: 'readdir': identifier not found
+C:\Users\CompS\source\repos\DataBase\database.cpp(488,22): error C2027: use of undefined type 'delete_database::dirent'
+      C:\Users\CompS\source\repos\DataBase\database.cpp(483,12):
+      see declaration of 'delete_database::dirent'
+  
+C:\Users\CompS\source\repos\DataBase\database.cpp(493,18): error C2065: 'dr': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(493,9): error C3861: 'closedir': identifier not found
+C:\Users\CompS\source\repos\DataBase\database.cpp(494,9): error C3861: 'rmdir': identifier not found
+C:\Users\CompS\source\repos\DataBase\database.cpp(498,17): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\CompS\source\repos\DataBase\database.cpp(926,20): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\CompS\source\repos\DataBase\database.cpp(967,20): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\CompS\source\repos\DataBase\database.cpp(1182,24): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\CompS\source\repos\DataBase\database.cpp(1220,13): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1223,13): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1548,104): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1548,121): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1550,33): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1561,78): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1561,95): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1563,37): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1566,82): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1566,99): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1612,53): error C2065: 'scope': undeclared identifier
+C:\Users\CompS\source\repos\DataBase\database.cpp(1616,52): error C2065: 'scope': undeclared identifier
+
+Project Performance Summary:
+      758 ms  C:\Users\CompS\source\repos\DataBase\DataBase.vcxproj   1 calls
+                758 ms  Build                                      1 calls
+
+Target Performance Summary:
+        0 ms  PreBuildEvent                              1 calls
+        0 ms  _SelectedFiles                             1 calls
+        0 ms  SelectCustomBuild                          1 calls
+        0 ms  ComputeCustomBuildOutput                   1 calls
+        0 ms  CopyFileToFolders                          1 calls
+        0 ms  _Xsd                                       1 calls
+        0 ms  MakeDirsForMidl                            1 calls
+        0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
+        0 ms  AfterMidl                                  1 calls
+        0 ms  _Midl                                      1 calls
+        0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  AfterBuildGenerateSourcesEvent             1 calls
+        0 ms  _BuildGenerateSourcesAction                1 calls
+        0 ms  BuildGenerateSources                       1 calls
+        0 ms  BuildCompileTraverse                       1 calls
+        0 ms  BeforeClCompile                            1 calls
+        0 ms  ComputeCLInputPDBName                      1 calls
+        0 ms  FindReferenceAssembliesForReferences       1 calls
+        0 ms  GetReferencedVCProjectsInfo                1 calls
+        0 ms  ComputeReferenceCLInput                    1 calls
+        0 ms  WarnCompileDuplicatedFilename              1 calls
+        0 ms  SetCppLanguageStandardCapabilities         1 calls
+        0 ms  FixupCLCompileOptions                      1 calls
+        0 ms  MakeDirsForCl                              1 calls
+        0 ms  VcpkgCheckManifestRoot                     1 calls
+        0 ms  SelectClCompile                            1 calls
+        0 ms  BeforeBuildGenerateSources                 1 calls
+        0 ms  InitializeBuildStatus                      1 calls
+        0 ms  SetTelemetryEnvironmentVariables           1 calls
+        0 ms  _PrepareForBuild                           1 calls
+        0 ms  _PrepareForReferenceResolution             1 calls
+        0 ms  BeforeResolveReferences                    1 calls
+        0 ms  IgnoreJavaScriptOutputAssembly             1 calls
+        0 ms  AssignProjectConfiguration                 1 calls
+        0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  _AddOutputPathToGlobalPropertiesToRemove   1 calls
+        0 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
+        0 ms  PrepareProjectReferences                   1 calls
+        0 ms  ResolveProjectReferences                   1 calls
+        0 ms  BuildGenerateSourcesTraverse               1 calls
+        0 ms  GetFrameworkPaths                          1 calls
+        0 ms  AddExternalIncludDirectoriesToPaths        1 calls
+        0 ms  GetResolvedWinMD                           1 calls
+        0 ms  SetCABuildNativeEnvironmentVariables       1 calls
+        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  ExpandSDKReferences                        1 calls
+        0 ms  ResolveAssemblyReferences                  1 calls
+        0 ms  AfterResolveReferences                     1 calls
+        0 ms  ResolveReferences                          1 calls
+        0 ms  GetReferenceAssemblyPaths                  1 calls
+        0 ms  VcpkgTripletSelection                      1 calls
+        3 ms  _CheckWindowsSDKInstalled                  1 calls
+        4 ms  ComputeStdModulesCompileInputs             1 calls
+        4 ms  PrepareForBuild                            1 calls
+        9 ms  CustomBuild                                1 calls
+       15 ms  SetBuildDefaultEnvironmentVariables        1 calls
+       16 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+      708 ms  ClCompile                                  1 calls
+
+Task Performance Summary:
+        0 ms  Message                                    4 calls
+        0 ms  AssignProjectConfiguration                 1 calls
+        0 ms  MSBuild                                    1 calls
+        0 ms  SetRidAgnosticValueForProjects             1 calls
+        0 ms  MakeDir                                    5 calls
+        0 ms  VCMessage                                  1 calls
+        0 ms  ReadLinesFromFile                          1 calls
+        0 ms  WriteLinesToFile                           1 calls
+        0 ms  Touch                                      1 calls
+        2 ms  CheckVCToolsetVersion                      1 calls
+        9 ms  GetOutOfDateItems                          3 calls
+       15 ms  SetEnv                                    11 calls
+      708 ms  CL                                         1 calls
