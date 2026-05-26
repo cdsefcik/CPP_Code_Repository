@@ -1,0 +1,11 @@
+//these header files are equivalent to std_lib_facilities.h 
+#include <iostream>
+#include <string> //Include the library for supporting string objects.
+#include <vector>
+#include <cmath>
+#include <algorithm>
+#include <fstream> // Include file Stream Support.
+#include <stdexcept> // include the support for standard exceptions.
+#include <typeinfo> // support type information.
+
+using namespace std; 
